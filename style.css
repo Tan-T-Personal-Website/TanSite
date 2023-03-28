@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Eczar:wght@500&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courgette&family=Eczar:wght@500&family=Source+Code+Pro&display=swap');
+/* HTML RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: 'Eczar', serif;
+    background-color: #935d8c;
+    background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+    background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+}
+
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+/* HEADER  */
+
+header {
+    font-size: 2.4rem;
+    font-family: 'Alfa Slab One', cursive;
+    border-bottom: 4px solid rgba(189, 185, 185, 0.378);
+    background-color: #855d7f;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home,
+.about,
+.portfolio {
+    margin-left: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(204, 178, 206, 0.65);
+}
+
+/* IMAGE */
+.profileimg {
+    border-radius: 50%;
+    display: block;
+    margin: 3rem auto 2rem auto;
+    border-style: double;
+    border-color: rgba(255, 255, 255, 0.65);
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 10px rgba(204, 178, 206, 0.65),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    ;
+}
+
+#main {
+    background-color: #c1bbbb;
+    color: #636363;
+    border-radius: 0.25em;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.2rem;
+}
