@@ -15,42 +15,41 @@
         <nav class="container">
             <img class="logo" src="./image/Logo.png" alt="logo" width="250" height="auto">
             <div class="links">
-                <a class="home"> Home </a>
-                <a class="about" href="about.html"> About </a>
-                <a class="portfolio" href="portfolio.html">Portfolio </a>
+                <a class="home" href="./index.html"> Home </a>
+                <div class="dropdown">
+                    <a class="about" onclick="myFunction()"> About▽
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="./about.html#"> Work Experience </a>
+                        <a href="./about.html#link-ed"> Education </a>
+                        <a href="./about.html#link-sl">Skills & Language </a>
+                    </div>
+                </div>
+                <a class="portfolio" href="./portfolio.html">Portfolio </a>
             </div>
         </nav>
     </header>
 
     <!-- Main  -->
     <main>
-        <div id="main">
+        <div class="main">
             <section>
                 <img class="profileimg" src="./image/IMG_9489.JPG" alt="Tan" width="400" height="auto">
-                <h2> Tan Tiachanpan </h2>
-                <h3> Brand Registry & Catalogue Seller Support Team </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nisi labore tempore tempora ullam
-                    eius
-                    quisquam officia alias non dolore. Voluptas aliquam amet odio perspiciatis. Nihil nesciunt quia
-                    consequuntur
-                    non error maxime, eveniet ad aliquid sit amet repellat quasi quisquam sequi quae ipsum doloribus.
-                    Labore,
-                    ipsam nulla! In, omnis enim.</p>
+                <h1> Tan Tiachanpan </h1>
+                <!-- <h3> Brand Registry & Catalogue Seller Support Team </h3> -->
+                <p> Web Developer with a passion for web application development and success in managing development
+                    projects using Scrum, Agile, and Lean processes. Skilled in conceptualizing, designing, development,
+                    and deploying software containing logical and mathematical solutions to business problems. Dedicated
+                    to driving innovation with the ability to follow industry and technological trends, and facilitating
+                    early adoption of innovations.</p>
             </section>
         </div>
-
-
-
-
-
-
-
     </main>
-
 
     <!-- Footer -->
     <footer>
-        <section>
+        <section class="contact">
             <h2>Contact </h2>
             <dl class="alt">
                 <dt>Address</dt>
@@ -60,17 +59,14 @@
                 <dt>Email</dt>
                 <dd><a href="#">prapatsorn.ti@gmail.com</a></dd>
             </dl>
-            <!-- <ul class="icons">
-                <li><a href="#" class="icon brands fa-linkin alt"><span class="label">LinkedIn</span></a></li>
-                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-            </ul> -->
-            <a href="https://linkedin.com"> <img src="./image/logo-linkedin-512.webp" alt="linkedin" width="60px"
+            <a id="logo" href="https://linkedin.com"> <img src="./image/logo-linkedin-512.webp" alt="linkedin"
+                    width="60px" height="auto"></a>
+            <a if="logo" href="https://github.com"> <img src="./image/38401.png" alt="github" width="50px"
                     height="auto"></a>
-            <a href="https://github.com"> <img src="./image/38401.png" alt="github" width="50px" height="auto"></a>
         </section>
         <p class="copyright">&copy; Prapatsorn T.</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

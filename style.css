@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Eczar:wght@500&family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courgette&family=Eczar:wght@500&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bodoni+Moda:wght@400;600&family=Courgette&family=Eczar:wght@500&family=Paytone+One&family=Source+Code+Pro&display=swap');
+
+
 /* HTML RESET */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
+/* BASIC SETTINGS */
+
 body {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(249, 248, 248, 0.65);
     font-family: 'Eczar', serif;
     background-color: #935d8c;
     background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -31,13 +37,13 @@ body.is-preload *:after {
     transition: none !important;
 }
 
-/* HEADER  */
-
 header {
     font-size: 2.4rem;
     font-family: 'Alfa Slab One', cursive;
     border-bottom: 4px solid rgba(189, 185, 185, 0.378);
     background-color: #855d7f;
+    position: sticky;
+    top: 0;
 }
 
 .container {
@@ -58,7 +64,68 @@ a {
     color: rgba(204, 178, 206, 0.65);
 }
 
-/* IMAGE */
+p {
+    font-size: 1.5rem;
+    color: rgb(139, 115, 115);
+    padding: 3rem;
+}
+
+.main {
+    background-color: #c1bbbb;
+    color: #636363;
+    border-radius: 0.25em;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.2rem;
+}
+
+a:hover {
+    color: rgba(166, 156, 166, 0.417);
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+
+.links {
+    display: flex;
+}
+
+.dropdown .about {
+
+    outline: none;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 2rem;
+    position: absolute;
+    background-color: #cdbcbc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(111, 103, 103);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
+p #link-ed {
+    display: none;
+}
+
+/* HOME - PAGE */
+
 .profileimg {
     border-radius: 50%;
     display: block;
@@ -69,25 +136,100 @@ a {
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
-h2 {
+h1 {
     text-align: center;
+    text-shadow: 1px 1px #e7dddd;
     font-family: 'Alfa Slab One', cursive;
     font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
+
+h2 {
+    text-decoration: underline;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    margin-top: 3rem;
+    margin-left: 40%;
+    margin-right: 35%;
+}
+
+
+dl {
+    font-size: 1.2rem;
+}
+
+dl.alt dt {
+    display: block;
+    width: 3em;
+    margin: 0;
+    clear: left;
+    float: left;
+}
+
+dl dt {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+dl.alt dd {
+    margin: 0 0 0.85em 5.5em;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+/* ABOUT  */
 
 h3 {
-    text-align: center;
-    font-family: 'Courgette', cursive;
-    ;
+    font-family: 'Paytone One', sans-serif;
+    margin: 2rem;
+    text-shadow: 1px 1px #e7dddd;
+    font-size: 1.4rem;
 }
 
-#main {
-    background-color: #c1bbbb;
-    color: #636363;
-    border-radius: 0.25em;
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0.2rem;
+h4 {
+    margin-left: 2rem;
+}
+
+.pink {
+    color: #935d8c;
+    font-weight: 600;
+    text-shadow: 2px 2px #e0c2c2;
+}
+
+li {
+    list-style-position: inside;
+    padding: .5rem 30% .5rem 20%;
+    font-size: 1.5rem;
+    color: rgb(139, 115, 115);
+}
+
+hr {
+    border: 2px dotted grey;
+}
+
+#half-page {
+    display: flex;
+    justify-content: center;
+}
+
+div .main {
+    flex-grow: 3;
+}
+
+/* PORTFOLIO */
+#float-left {
+    float: left;
+    margin: 3rem;
+}
+
+#float-right {
+    float: right;
+    margin: 3rem;
 }
