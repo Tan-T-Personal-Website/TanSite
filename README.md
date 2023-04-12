@@ -10,16 +10,15 @@ Check it out : [TanSite ](https://tan-t-personal-website.github.io/TanSite/)
  - HTML, CSS, Javascript
 
 ## Directory
-
-1. Home
+ 1. Home
  2. About
  3. Portfolio
+ 4. Contact
  
  
  ### Home
  
  - Title/Summary
- - Contact
 
 ### About
 
@@ -34,8 +33,13 @@ Check it out : [TanSite ](https://tan-t-personal-website.github.io/TanSite/)
  - Project 1
  - Project 2
 
+###  Contact
+- Information
+- Contact Form 
+
 ## Criteria
 
+#### Part 1
  - [ ] Github: More than one branch (including main/master), with
        descriptive branch name(s)
  - [ ] Github: More than one commit, with descriptive commit messages
@@ -50,3 +54,12 @@ Check it out : [TanSite ](https://tan-t-personal-website.github.io/TanSite/)
        an external file
  - [ ] Correct Files Submitted: The HTML/CSS/JavaScript files are
        submitted via a Github repository
+
+#### Part 2
+ - [ ] Generate a github project and repository containing the project
+ - [ ] Create a functioning layout in CSS grid or CSS flex
+ - [ ] Proportional units are used
+ - [ ] Use at least one of the following selectors: media queries, nth selectors, !important, hierarchical selectors
+ - [ ] Use at least one of the following rules: box-sizing, backgrounds, DOM ordering, z-index, transitions, calc, common shorthands
+ - [ ] Design and build an HTML form with a variety of input types. Form must have a functional submit button leading to another page.
+ - [ ] Collaborate with a partner to build a project plan
