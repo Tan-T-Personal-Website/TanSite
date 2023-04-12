@@ -1,4 +1,4 @@
-# Block09 - My First Personal Website
+# My First Personal Website
 
 **Tan Tiachanpan**
 #### No coding experience , but looking forward to learn something new ! 
